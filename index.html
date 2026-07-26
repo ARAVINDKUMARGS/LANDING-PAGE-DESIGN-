@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aphelion — Log the sky, before it moves on</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo">
+      <svg class="logo-mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="1.6" fill="#D9A441"/>
+        <circle cx="12" cy="12" r="10.5" stroke="#C1443B" stroke-width="1"/>
+        <circle cx="20" cy="6" r="1" fill="#EDEAE1"/>
+      </svg>
+      Aphelion
+    </div>
+    <ul class="nav-links">
+      <li><a href="#features">Field Notes</a></li>
+      <li><a href="#signup">Sign Up</a></li>
+    </ul>
+    <a class="nav-cta" href="#signup">Start a log →</a>
+  </nav>
+</header>
+
+<section class="hero" style="border-top:none;">
+  <div>
+    <p class="eyebrow">Amateur Astronomy Journal</p>
+    <h1>Log the sky, <em>before</em> it moves on.</h1>
+    <p>Aphelion is a field log for people who point a scope or a pair of binoculars at the dark and want to remember what they saw. Track sessions, conditions, and sightings — searchable by object, date, or sky position.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#signup">Start a log — free</a>
+      <span class="hero-note">No card. Sync across devices.</span>
+    </div>
+  </div>
+
+  <div class="wheel-stage">
+    <svg class="wheel" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rotating star chart illustration">
+      <circle cx="200" cy="200" r="190" fill="none" stroke="#232B3A" stroke-width="1"/>
+      <circle cx="200" cy="200" r="140" fill="none" stroke="#232B3A" stroke-width="1"/>
+      <circle cx="200" cy="200" r="90" fill="none" stroke="#232B3A" stroke-width="1"/>
+      <line x1="200" y1="10" x2="200" y2="390" stroke="#1B222E" stroke-width="1"/>
+      <line x1="10" y1="200" x2="390" y2="200" stroke="#1B222E" stroke-width="1"/>
+
+      <polyline points="110,120 150,110 195,130 235,120 250,150 220,175 195,150"
+                fill="none" stroke="#C1443B" stroke-width="1.2" opacity="0.8"/>
+      <circle cx="110" cy="120" r="3" fill="#D9A441"/>
+      <circle cx="150" cy="110" r="2.4" fill="#EDEAE1"/>
+      <circle cx="195" cy="130" r="2.4" fill="#EDEAE1"/>
+      <circle cx="235" cy="120" r="2.4" fill="#EDEAE1"/>
+      <circle cx="250" cy="150" r="2.4" fill="#EDEAE1"/>
+      <circle cx="220" cy="175" r="2.4" fill="#EDEAE1"/>
+      <circle cx="195" cy="150" r="2.8" fill="#D9A441"/>
+
+      <circle cx="90" cy="260" r="1.6" fill="#EDEAE1" opacity="0.7"/>
+      <circle cx="310" cy="240" r="1.8" fill="#EDEAE1" opacity="0.6"/>
+      <circle cx="280" cy="300" r="1.4" fill="#EDEAE1" opacity="0.5"/>
+      <circle cx="130" cy="320" r="1.6" fill="#EDEAE1" opacity="0.6"/>
+      <circle cx="60" cy="180" r="1.4" fill="#EDEAE1" opacity="0.5"/>
+      <circle cx="330" cy="150" r="1.6" fill="#EDEAE1" opacity="0.6"/>
+
+      <text x="200" y="30" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" fill="#8B94A3" letter-spacing="1">N</text>
+      <text x="200" y="378" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" fill="#8B94A3" letter-spacing="1">S</text>
+      <text x="18" y="204" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" fill="#8B94A3">W</text>
+      <text x="382" y="204" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" fill="#8B94A3">E</text>
+    </svg>
+  </div>
+</section>
+
+<section id="features">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>What goes in the log</h2>
+      <p>Three habits worth keeping, built into the app instead of a paper notebook you'll lose by August.</p>
+    </div>
+
+    <div class="log">
+      <div class="log-entry">
+        <div class="log-time">SESSION<span>timestamped</span></div>
+        <div class="log-body">
+          <h3>Every session, dated and placed</h3>
+          <p>Open a session and Aphelion records the time, your location, and pulls current seeing and transparency conditions automatically. You just note what you pointed at and how it looked.</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-time">OBJECTS<span>cross-referenced</span></div>
+        <div class="log-body">
+          <h3>Sightings linked to a catalog</h3>
+          <p>Log a sighting against Messier, NGC, or a custom object, and Aphelion keeps a running history of every time you've observed it — magnitude estimates, sketches, and notes included.</p>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-time">SEARCH<span>by sky or date</span></div>
+        <div class="log-body">
+          <h3>Find a night by what was in it</h3>
+          <p>Search your log by object, constellation, equipment, or conditions. "Every clear night I looked at Saturn" is a query, not a memory you have to trust.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="signup" class="signup">
+  <div class="section-inner">
+    <div class="signup-card">
+      <h2>Start your first entry tonight</h2>
+      <p>Free while in early access. Bring your own scope, binoculars, or naked eye — the log doesn't care what you're using.</p>
+      <form class="signup-form" id="signupForm">
+        <label for="email" style="position:absolute;left:-9999px;">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@observatory.com" required>
+        <button type="submit" class="btn-primary">Get early access</button>
+      </form>
+      <p class="form-message" id="formMessage">Logged. Check your inbox to confirm.</p>
+      <p class="signup-note">// one email, no spam, unsubscribe anytime</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span>Aphelion — a field log for the dark</span>
+    <span>&copy; 2026</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
